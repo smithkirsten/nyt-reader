@@ -107,13 +107,14 @@ header {
 nav{
   display: flex;
   justify-content: space-around;
-  padding: 1rem;
+  padding-top: 1rem;
   border-bottom: #281b0d 1px solid;
 }
 
 button {
   cursor: pointer;
   border: #0A0D17 1px solid;
+  border-bottom: 0px;
   padding: 5px;
 }
 
