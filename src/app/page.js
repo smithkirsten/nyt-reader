@@ -5,6 +5,7 @@ import styles from './page.module.css'
 import globals from 'src/app/globals.css'
 import { useEffect, useState } from 'react'
 import mockData from './mockdata.json'
+import Article from './Components/Article'
 
 const noticia = Noticia_Text({ 
   weight: ['400', '700'],
@@ -21,8 +22,6 @@ useEffect(() => {
     console.log(mockData)
     setArticles(mockData.results)
   }
-
-
 }, [])
 
   return (
@@ -30,11 +29,8 @@ useEffect(() => {
       <div>
         <h2>Top News Stories Today</h2>
       </div>
-      <section>
-        <div>
-          <p>some card title</p>
-          <p>and other info too i guess</p>
-        </div>
+      <section className={styles.articleSection}>
+        {articles.map(article => <Article key={article.url} article={article} />)}
       </section>
     </main>
   )
