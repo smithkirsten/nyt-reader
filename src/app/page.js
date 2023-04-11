@@ -1,8 +1,12 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Noticia_Text } from 'next/font/google'
 import styles from './page.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const noticia = Noticia_Text({ 
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'] 
+})
 
 export default function Home() {
   return (
