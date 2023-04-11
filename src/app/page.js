@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import { Noticia_Text } from 'next/font/google'
 import styles from './page.module.css'
@@ -10,13 +11,14 @@ const noticia = Noticia_Text({
   subsets: ['latin'] 
 })
 
-const [articles, setArticles] = useState([])
+export default function Home() {
+
+  const [articles, setArticles] = useState([])
 
 useEffect(() => {
 
 }, [])
 
-export default function Home() {
   return (
     <main className={globals.main}>
       <div>
