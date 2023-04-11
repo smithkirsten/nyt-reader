@@ -13,7 +13,8 @@ export default function RootLayout({ children }) {
           <h1>Top of the Morning from the NYT</h1>
         </header>
         <nav>
-
+          <button>Top Stories</button>
+          <button>Most Popular Stories</button>
         </nav>
         {children}
       </body>
