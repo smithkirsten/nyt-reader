@@ -1,0 +1,320 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
+  "section": "World News",
+  "last_updated": "2023-04-11T14:36:38-04:00",
+  "num_results": 35,
+  "results": [
+      {
+          "section": "world",
+          "subsection": "europe",
+          "title": "Lethal Surprises Hidden in the Grass: Russia’s Trip Wires and Land Mines",
+          "abstract": "As Moscow’s troops set booby traps in forests, houses and backyards, finding them has become a dangerous art for Ukrainian soldiers.",
+          "url": "https://www.nytimes.com/2023/04/10/world/europe/russia-booby-traps-ukraine-war.html",
+          "uri": "nyt://article/8cba6079-9174-52f0-bd7e-534d63a1c500",
+          "byline": "By Andrew E. Kramer",
+          "item_type": "Article",
+          "updated_date": "2023-04-11T10:08:30-04:00",
+          "created_date": "2023-04-10T12:49:29-04:00",
+          "published_date": "2023-04-10T12:49:29-04:00",
+          "material_type_facet": "",
+          "kicker": "",
+          "des_facet": [
+              "Russian Invasion of Ukraine (2022)",
+              "Mines, Explosive",
+              "Bombs and Explosives",
+              "Defense and Military Forces"
+          ],
+          "org_facet": [],
+          "per_facet": [],
+          "geo_facet": [
+              "Lyman (Ukraine)",
+              "Russia",
+              "Ukraine"
+          ],
+          "multimedia": [
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/06/multimedia/00ukraine-mines-02-zqlg/00ukraine-mines-02-zqlg-superJumbo.jpg",
+                  "format": "Super Jumbo",
+                  "height": 1365,
+                  "width": 2048,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "A Ukrainian de-mining team preparing to explode a hand grenade rigged to a trip wire, right, on the outskirts of Lyman, in eastern Ukraine, on April 3.",
+                  "copyright": "Mauricio Lima for The New York Times"
+              },
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/06/multimedia/00ukraine-mines-02-zqlg/00ukraine-mines-02-zqlg-threeByTwoSmallAt2X.jpg",
+                  "format": "threeByTwoSmallAt2X",
+                  "height": 400,
+                  "width": 600,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "A Ukrainian de-mining team preparing to explode a hand grenade rigged to a trip wire, right, on the outskirts of Lyman, in eastern Ukraine, on April 3.",
+                  "copyright": "Mauricio Lima for The New York Times"
+              },
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/06/multimedia/00ukraine-mines-02-zqlg/00ukraine-mines-02-zqlg-thumbLarge.jpg",
+                  "format": "Large Thumbnail",
+                  "height": 150,
+                  "width": 150,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "A Ukrainian de-mining team preparing to explode a hand grenade rigged to a trip wire, right, on the outskirts of Lyman, in eastern Ukraine, on April 3.",
+                  "copyright": "Mauricio Lima for The New York Times"
+              }
+          ],
+          "short_url": "https://nyti.ms/3MwD2Qa"
+      },
+      {
+          "section": "world",
+          "subsection": "asia",
+          "title": "In China, Young People Ditch Prestige Jobs for Manual Labor",
+          "abstract": "Some people who’ve walked away from China’s grueling corporate culture say it’s worth the financial sacrifice. “I was tired of living like that,” one said.",
+          "url": "https://www.nytimes.com/2023/04/11/world/asia/china-youth-employment.html",
+          "uri": "nyt://article/0ddb72c6-d762-530f-815c-860915befd77",
+          "byline": "By Vivian Wang and Zixu Wang",
+          "item_type": "Article",
+          "updated_date": "2023-04-11T11:56:08-04:00",
+          "created_date": "2023-04-11T03:00:09-04:00",
+          "published_date": "2023-04-11T03:00:09-04:00",
+          "material_type_facet": "",
+          "kicker": "",
+          "des_facet": [
+              "Work-Life Balance",
+              "Youth",
+              "Labor and Jobs"
+          ],
+          "org_facet": [],
+          "per_facet": [],
+          "geo_facet": [
+              "China"
+          ],
+          "multimedia": [
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/02/multimedia/00china-jobs-01-mzlg/00china-jobs-01-mzlg-superJumbo.jpg",
+                  "format": "Super Jumbo",
+                  "height": 1455,
+                  "width": 2048,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "At a job fair in Wuhan, China, in February.",
+                  "copyright": "China News Service, via Reuters"
+              },
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/02/multimedia/00china-jobs-01-mzlg/00china-jobs-01-mzlg-threeByTwoSmallAt2X.jpg",
+                  "format": "threeByTwoSmallAt2X",
+                  "height": 400,
+                  "width": 600,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "At a job fair in Wuhan, China, in February.",
+                  "copyright": "China News Service, via Reuters"
+              },
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/02/multimedia/00china-jobs-01-mzlg/00china-jobs-01-mzlg-thumbLarge.jpg",
+                  "format": "Large Thumbnail",
+                  "height": 150,
+                  "width": 150,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "At a job fair in Wuhan, China, in February.",
+                  "copyright": "China News Service, via Reuters"
+              }
+          ],
+          "short_url": "https://nyti.ms/3UoMJSq"
+      },
+      {
+          "section": "world",
+          "subsection": "middleeast",
+          "title": "What Do Peace Talks in Yemen Mean for Its 8-Year War?",
+          "abstract": "The surprise rapprochement between Saudi Arabia and Iran, whose rivalry fueled the war, has raised a glimmer of hope for a breakthrough in resolving one of the world’s worst crises.",
+          "url": "https://www.nytimes.com/2023/04/10/world/middleeast/yemen-peace-talks.html",
+          "uri": "nyt://article/05d2f6de-282f-5b0e-8502-f20b67a25d4f",
+          "byline": "By Vivian Nereim and Shuaib Almosawa",
+          "item_type": "Article",
+          "updated_date": "2023-04-10T20:58:04-04:00",
+          "created_date": "2023-04-10T18:48:48-04:00",
+          "published_date": "2023-04-10T18:48:48-04:00",
+          "material_type_facet": "",
+          "kicker": "",
+          "des_facet": [
+              "Peace Process",
+              "International Relations",
+              "Politics and Government"
+          ],
+          "org_facet": [
+              "Houthis"
+          ],
+          "per_facet": [],
+          "geo_facet": [
+              "Yemen",
+              "Saudi Arabia",
+              "Iran"
+          ],
+          "multimedia": [
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/10/multimedia/10yemen-1-bjpk/10yemen-1-bjpk-superJumbo.jpg",
+                  "format": "Super Jumbo",
+                  "height": 1365,
+                  "width": 2048,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "Houthi soldiers, top left, in the Yemeni capital looking down on a protest last month marking the eighth anniversary of the Saudi-led military campaign in Yemen.",
+                  "copyright": "Yahya Arhab/EPA, via Shutterstock"
+              },
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/10/multimedia/10yemen-1-bjpk/10yemen-1-bjpk-threeByTwoSmallAt2X.jpg",
+                  "format": "threeByTwoSmallAt2X",
+                  "height": 400,
+                  "width": 600,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "Houthi soldiers, top left, in the Yemeni capital looking down on a protest last month marking the eighth anniversary of the Saudi-led military campaign in Yemen.",
+                  "copyright": "Yahya Arhab/EPA, via Shutterstock"
+              },
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/10/multimedia/10yemen-1-bjpk/10yemen-1-bjpk-thumbLarge.jpg",
+                  "format": "Large Thumbnail",
+                  "height": 150,
+                  "width": 150,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "Houthi soldiers, top left, in the Yemeni capital looking down on a protest last month marking the eighth anniversary of the Saudi-led military campaign in Yemen.",
+                  "copyright": "Yahya Arhab/EPA, via Shutterstock"
+              }
+          ],
+          "short_url": "https://nyti.ms/3ZXCntK"
+      },
+      {
+          "section": "world",
+          "subsection": "europe",
+          "title": "French Police Face Scrutiny for Heavy Hand During Pension Protests",
+          "abstract": "An audio recording of officers threatening and intimidating young people has reignited a debate over harsh and discriminating tactics.",
+          "url": "https://www.nytimes.com/2023/04/11/world/europe/france-police-pension-protests.html",
+          "uri": "nyt://article/9804c6c5-47f2-53bf-82a8-eef2ba07257f",
+          "byline": "By Constant Méheut",
+          "item_type": "Article",
+          "updated_date": "2023-04-11T13:45:41-04:00",
+          "created_date": "2023-04-11T10:11:52-04:00",
+          "published_date": "2023-04-11T10:11:52-04:00",
+          "material_type_facet": "",
+          "kicker": "",
+          "des_facet": [
+              "Police",
+              "Police Brutality, Misconduct and Shootings",
+              "Demonstrations, Protests and Riots",
+              "Pensions and Retirement Plans",
+              "Yellow Vests Movement",
+              "Politics and Government",
+              "Attacks on Police",
+              "Vandalism"
+          ],
+          "org_facet": [],
+          "per_facet": [
+              "Darmanin, Gerald"
+          ],
+          "geo_facet": [
+              "France",
+              "Paris (France)"
+          ],
+          "multimedia": [
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/11/multimedia/00france-police-01-wvhq/00france-police-01-wvhq-superJumbo.jpg",
+                  "format": "Super Jumbo",
+                  "height": 1365,
+                  "width": 2048,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "Riot police officers moving toward demonstrators during a protest in Paris in March.",
+                  "copyright": "James Hill for The New York Times"
+              },
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/11/multimedia/00france-police-01-wvhq/00france-police-01-wvhq-threeByTwoSmallAt2X.jpg",
+                  "format": "threeByTwoSmallAt2X",
+                  "height": 400,
+                  "width": 600,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "Riot police officers moving toward demonstrators during a protest in Paris in March.",
+                  "copyright": "James Hill for The New York Times"
+              },
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/11/multimedia/00france-police-01-wvhq/00france-police-01-wvhq-thumbLarge.jpg",
+                  "format": "Large Thumbnail",
+                  "height": 150,
+                  "width": 150,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "Riot police officers moving toward demonstrators during a protest in Paris in March.",
+                  "copyright": "James Hill for The New York Times"
+              }
+          ],
+          "short_url": "https://nyti.ms/3GzbPbM"
+      },
+      {
+          "section": "world",
+          "subsection": "middleeast",
+          "title": "During Ramadan, Palestinians Picnic in Aqsa Compound to Break Fast",
+          "abstract": "A coveted Middle Eastern rice dish has become a social media star at Al Aqsa Mosque, even as tensions escalate at a site also revered by Jews.",
+          "url": "https://www.nytimes.com/2023/04/11/world/middleeast/jerusalem-aqsa-mosque-ramadan.html",
+          "uri": "nyt://article/7cd895a8-3fe6-5005-b1af-81991388cbf1",
+          "byline": "By Raja Abdulrahim",
+          "item_type": "Article",
+          "updated_date": "2023-04-11T10:13:36-04:00",
+          "created_date": "2023-04-11T08:55:34-04:00",
+          "published_date": "2023-04-11T08:55:34-04:00",
+          "material_type_facet": "",
+          "kicker": "Jerusalem Dispatch",
+          "des_facet": [
+              "Ramadan",
+              "Palestinians",
+              "Mosques",
+              "Muslims and Islam",
+              "Social Media",
+              "Fasting"
+          ],
+          "org_facet": [
+              "Al Aqsa Mosque (Jerusalem)"
+          ],
+          "per_facet": [],
+          "geo_facet": [
+              "Jerusalem (Israel)",
+              "East Jerusalem",
+              "Israel"
+          ],
+          "multimedia": [
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/10/multimedia/10ramadan-dispatch-promo/10ramadan-dispatch-01-fjwk-superJumbo.jpg",
+                  "format": "Super Jumbo",
+                  "height": 1368,
+                  "width": 2048,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "",
+                  "copyright": "Afif Amireh for The New York Times"
+              },
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/10/multimedia/10ramadan-dispatch-promo/10ramadan-dispatch-promo-threeByTwoSmallAt2X.jpg",
+                  "format": "threeByTwoSmallAt2X",
+                  "height": 400,
+                  "width": 600,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "",
+                  "copyright": "Afif Amireh for The New York Times"
+              },
+              {
+                  "url": "https://static01.nyt.com/images/2023/04/10/multimedia/10ramadan-dispatch-promo/10ramadan-dispatch-promo-thumbLarge.jpg",
+                  "format": "Large Thumbnail",
+                  "height": 150,
+                  "width": 150,
+                  "type": "image",
+                  "subtype": "photo",
+                  "caption": "",
+                  "copyright": "Afif Amireh for The New York Times"
+              }
+          ],
+          "short_url": "https://nyti.ms/40XAuil"
+      }]
+  }
