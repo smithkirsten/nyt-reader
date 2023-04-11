@@ -4,10 +4,11 @@ export default function Article({ article }) {
   console.log(article)
   return(
     <article className={styles.card}>
-      <img/>
-      <h3>{article.title}</h3>
-      <p>{article.byline}</p>
-      <p>{article.abstract}</p>
+      <header className={styles.heading}>
+        <h3>{article.title}</h3>
+      </header>
+      <p className={styles.byline}>{article.byline}</p>
+      <p className={styles.abstract}>{article.abstract}</p>
     </article>
   )
 }
