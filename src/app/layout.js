@@ -10,13 +10,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>
-          <h1>Top of the Morning from the NYT</h1>
-        </header>
         <nav>
           <Link href='/'><button>Top Stories</button></Link>
           <Link href='/popular'><button>Most Popular Stories</button></Link>
         </nav>
+        <header>
+          <h1>Top of the Morning from the NYT</h1>
+        </header>
         {children}
       </body>
     </html>
