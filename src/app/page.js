@@ -4,6 +4,7 @@ import { Noticia_Text } from 'next/font/google'
 import styles from './page.module.css'
 import globals from 'src/app/globals.css'
 import { useEffect, useState } from 'react'
+import mockData from './mockdata.json'
 
 const noticia = Noticia_Text({ 
   weight: ['400', '700'],
@@ -13,9 +14,14 @@ const noticia = Noticia_Text({
 
 export default function Home() {
 
-  const [articles, setArticles] = useState([])
+const [articles, setArticles] = useState([])
 
 useEffect(() => {
+  if(!articles.length){
+    console.log(mockData)
+    setArticles(mockData.results)
+  }
+
 
 }, [])
 
