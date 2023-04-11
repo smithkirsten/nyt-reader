@@ -1,4 +1,5 @@
 import './globals.css'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'Top of the Morning',
@@ -13,8 +14,8 @@ export default function RootLayout({ children }) {
           <h1>Top of the Morning from the NYT</h1>
         </header>
         <nav>
-          <button>Top Stories</button>
-          <button>Most Popular Stories</button>
+          <Link href='/'><button>Top Stories</button></Link>
+          <Link href='/popular'><button>Most Popular Stories</button></Link>
         </nav>
         {children}
       </body>
