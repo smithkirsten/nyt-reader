@@ -1,10 +1,10 @@
 import globals from '../globals.css'
 import styles from './modal.module.css'
-export default function Modal({ article }) {
+export default function Modal({ article, xArticle }) {
   return (
     <div className={globals.modalBackground}>
       <div className={styles.modalContainer}>
-        <button> X </button>
+        <button onClick={() => xArticle()}> X </button>
         <p>image</p>
         <div>
           <h1>title</h1>
