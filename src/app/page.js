@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 import mockData from './mockdata.json'
 import { getArticles } from '../util'
 import Article from './Components/Article'
+import Filter from './Components/Filter'
 
 const noticia = Noticia_Text({ 
   weight: ['400', '700'],
@@ -37,14 +38,26 @@ const handleFilter = (selection) => {
   console.log('filter for ', selection)
 }
 
+const determineCards = () => {
+  console.log(articles)
+  if(filtered.length) {
+    return <p>filtered stuff</p>
+  } else if(articles.length) {
+    console.log(articles.length, 'rendering cards')
+    return articles.map(article => <Article key={article.url} article={article} />)
+  } else {
+    return <p>whoops, we couldn't find any articles</p>
+  }
+}
+
   return (
     <main className={globals.main}>
       <div>
         <h2>Top News Stories from the World Today</h2>
-        <Article handleFilter={handleFilter} />
+        <Filter handleFilter={handleFilter} />
       </div>
       <section className={styles.articleSection}>
-        {articles.map(article => <Article key={article.url} article={article} />)}
+        {determineCards()}
       </section>
     </main>
   )
