@@ -1,13 +1,13 @@
 import styles from './article.module.css'
 
-export default function Article({ article }) {
+export default function Article({ article, displayArticle }) {
   return(
-    <article className={styles.card}>
+    <button className={styles.card} onClick={displayArticle(article)}>
       <header className={styles.heading}>
         <h3>{article.title}</h3>
       </header>
       <p className={styles.byline}>{article.byline}</p>
       <p className={styles.abstract}>{article.abstract}</p>
-    </article>
+    </button>
   )
 }
