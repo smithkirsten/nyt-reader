@@ -1,1 +1,4 @@
-
+.articleSection {
+  display: flex;
+  flex-wrap: wrap;
+}
