@@ -43,8 +43,12 @@ const handleFilter = (selection) => {
     setFiltered(articles.filter(article => article.subsection === selection))
 }
 
-const displayArticle = () => {
-  
+const displayArticle = (article) => {
+  setModal(article)
+}
+
+const xArticle = () => {
+  setModal({})
 }
 
 const determineCards = () => {
