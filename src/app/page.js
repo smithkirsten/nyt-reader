@@ -54,9 +54,9 @@ const xArticle = () => {
 const determineCards = () => {
   if(filtered.length) {
     console.log('filtered cards rendering')
-    return filtered.map(article => <Article key={article.url} displayArticle={displayArticle} xArticle={xArticle} article={article} />)
+    return filtered.map(article => <Article key={article.url} displayArticle={displayArticle} article={article} />)
   } else if(articles.length) {
-    return articles.map(article => <Article key={article.url} displayArticle={displayArticle} xArticle={xArticle} article={article} />)
+    return articles.map(article => <Article key={article.url} displayArticle={displayArticle} article={article} />)
   } else {
     return <p>whoops, dog got the paper</p>
   }
@@ -71,7 +71,7 @@ const determineCards = () => {
       <section className={styles.articleSection}>
         {determineCards()}
       </section>
-      { modal.title && <Modal article={modal} />}
+      { modal.title && <Modal article={modal} xArticle={xArticle}/>}
     </main>
   )
 }
