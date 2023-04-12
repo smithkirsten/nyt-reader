@@ -36,17 +36,19 @@ useEffect(() => {
 
 const handleFilter = (selection) => {
   console.log('filter for ', selection)
+  selection === 'world' ?
+    setFiltered([]) :
+    setFiltered(articles.filter(article => article.subsection === selection))
 }
 
 const determineCards = () => {
-  console.log(articles)
   if(filtered.length) {
-    return <p>filtered stuff</p>
+    console.log('filtered cards rendering')
+    return filtered.map(article => <Article key={article.url} article={article} />)
   } else if(articles.length) {
-    console.log(articles.length, 'rendering cards')
     return articles.map(article => <Article key={article.url} article={article} />)
   } else {
-    return <p>whoops, we couldn't find any articles</p>
+    return <p>whoops, dog got the paper</p>
   }
 }
 
