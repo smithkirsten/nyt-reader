@@ -21,6 +21,7 @@ export default function Home() {
 const [articles, setArticles] = useState([])
 const [filtered, setFiltered] = useState([])
 const [error, setError] = useState({})
+const [modal, setModal] = useState({})
 
 useEffect(() => {
   if(!articles.length){
@@ -42,12 +43,16 @@ const handleFilter = (selection) => {
     setFiltered(articles.filter(article => article.subsection === selection))
 }
 
+const displayArticle = () => {
+  
+}
+
 const determineCards = () => {
   if(filtered.length) {
     console.log('filtered cards rendering')
-    return filtered.map(article => <Article key={article.url} article={article} />)
+    return filtered.map(article => <Article key={article.url} displayArticle={displayArticle} article={article} />)
   } else if(articles.length) {
-    return articles.map(article => <Article key={article.url} article={article} />)
+    return articles.map(article => <Article key={article.url} displayArticle={displayArticle} article={article} />)
   } else {
     return <p>whoops, dog got the paper</p>
   }
