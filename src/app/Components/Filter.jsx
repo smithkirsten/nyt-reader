@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react"
 
 export default function Filter({ handleFilter }) {
-  [selection, setSelection] = useState('')
+  const [selection, setSelection] = useState('')
 
 
   const handleChange = (value) => {
@@ -13,10 +13,11 @@ export default function Filter({ handleFilter }) {
   return(
     <div>
       <select value={selection} onChange={(e) => {handleChange(e.value)}}>
-        <option value={'europe'}>Europe</option>
-        <option value={'asia'}>Asia</option>
-        <option value={'middleeast'}>Middle East</option>
+        <option value={'world'}>World</option>
         <option value={'americas'}>Americas</option>
+        <option value={'asia'}>Asia</option>
+        <option value={'europe'}>Europe</option>
+        <option value={'middleeast'}>Middle East</option>
       </select>
     </div>
   )
