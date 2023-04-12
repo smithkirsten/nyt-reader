@@ -11,14 +11,16 @@ export default function Filter({ handleFilter }) {
     handleFilter(value)
   }
   return(
-    <div>
-      <select value={selection} onChange={(e) => {handleChange(e.value)}}>
-        <option value={'world'}>World</option>
-        <option value={'americas'}>Americas</option>
-        <option value={'asia'}>Asia</option>
-        <option value={'europe'}>Europe</option>
-        <option value={'middleeast'}>Middle East</option>
-      </select>
-    </div>
+    <form>
+      <div>
+        <select value={selection} onChange={(e) => {handleChange(e.target.value)}}>
+          <option value={'world'}>World</option>
+          <option value={'americas'}>Americas</option>
+          <option value={'asia'}>Asia</option>
+          <option value={'europe'}>Europe</option>
+          <option value={'middleeast'}>Middle East</option>
+        </select>
+      </div>
+    </form>
   )
 }
