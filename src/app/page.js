@@ -70,8 +70,8 @@ const determineCards = () => {
       </div>
       <section className={styles.articleSection}>
         {determineCards()}
-        <Modal />
       </section>
+      { modal.title && <Modal article={modal} />}
     </main>
   )
 }
