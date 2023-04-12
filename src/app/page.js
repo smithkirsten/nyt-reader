@@ -8,6 +8,7 @@ import mockData from './mockdata.json'
 import { getArticles } from '../util'
 import Article from './Components/Article'
 import Filter from './Components/Filter'
+import Modal from './Components/Modal'
 
 const noticia = Noticia_Text({ 
   weight: ['400', '700'],
@@ -60,6 +61,7 @@ const determineCards = () => {
       </div>
       <section className={styles.articleSection}>
         {determineCards()}
+        <Modal />
       </section>
     </main>
   )
