@@ -1,7 +1,6 @@
 import styles from './article.module.css'
 
 export default function Article({ article }) {
-  console.log(article)
   return(
     <article className={styles.card}>
       <header className={styles.heading}>
