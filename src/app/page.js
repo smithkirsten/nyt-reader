@@ -5,6 +5,7 @@ import styles from './page.module.css'
 import globals from 'src/app/globals.css'
 import { useEffect, useState } from 'react'
 import mockData from './mockdata.json'
+import { getArticles } from '../util'
 import Article from './Components/Article'
 
 const noticia = Noticia_Text({ 
@@ -16,11 +17,18 @@ const noticia = Noticia_Text({
 export default function Home() {
 
 const [articles, setArticles] = useState([])
+const [error, setError] = useState({})
 
 useEffect(() => {
   if(!articles.length){
-    console.log(mockData)
-    setArticles(mockData.results)
+    (async () => {
+      const data = await getArticles()
+      data.results ?
+        setArticles(data.results) :
+        setError(error)
+    })()
+    // console.log(mockData)
+    // setArticles(mockData.results)
   }
 }, [])
 
