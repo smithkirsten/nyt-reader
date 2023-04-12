@@ -35,7 +35,7 @@ useEffect(() => {
   return (
     <main className={globals.main}>
       <div>
-        <h2>Top News Stories Today</h2>
+        <h2>Top News Stories from the World Today</h2>
       </div>
       <section className={styles.articleSection}>
         {articles.map(article => <Article key={article.url} article={article} />)}
