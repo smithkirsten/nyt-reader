@@ -19,7 +19,7 @@ const [modal, setModal] = useState({})
 useEffect(() => {
   if(!articles.length){
     (async () => {
-      const data = await getArticles('science')
+      const data = await getArticles('arts')
       data.results ?
         setArticles(data.results.filter(article => article.section !== 'admin')) :
         setError(error)
@@ -28,7 +28,7 @@ useEffect(() => {
 }, [])
 
 const handleFilter = (selection) => {
-  selection === 'science' ?
+  selection === 'arts' ?
     setFiltered([]) :
     setFiltered(articles.filter(article => article.subsection === selection || article.section === selection))
 }
@@ -58,7 +58,7 @@ const determineCards = () => {
       <main className={globals.main}>
         <div>
           <h2>Top News Stories from the World Today</h2>
-          <Filter handleFilter={handleFilter} type='science'/>
+          <Filter handleFilter={handleFilter} type='arts'/>
         </div>
         <section className={styles.articleSection}>
           {determineCards()}
