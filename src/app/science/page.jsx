@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-// import { Noticia_Text } from 'next/font/google'
 import styles from '../page.module.css'
 import globals from 'src/app/globals.css'
 import { useEffect, useState } from 'react'
@@ -9,12 +8,6 @@ import { getArticles } from '../../util'
 import Article from '../Components/Article'
 import Filter from '../Components/Filter'
 import Modal from '../Components/Modal'
-
-// const noticia = Noticia_Text({ 
-//   weight: ['400', '700'],
-//   style: ['normal', 'italic'],
-//   subsets: ['latin'] 
-// })
 
 export default function science() {
 
