@@ -1,5 +1,7 @@
 import globals from '../globals.css'
 import styles from './modal.module.css'
+import Link from 'next/link'
+
 export default function Modal({ article, xArticle }) {
   return (
     <div className={globals.modalBackground}>
@@ -7,17 +9,16 @@ export default function Modal({ article, xArticle }) {
         <div>
           <button onClick={() => xArticle()}> X </button>
         </div>
-        <p>image</p>
+        <img src={article.multimedia[0].url} alt={article.multimedia[0].caption} className={styles.image}/>
         <div>
-          <h1>title</h1>
-          <p>byline</p>
-          <p>published date</p>
+          <h2>{article.title}</h2>
+          <p>{article.byline}</p>
+          <p>{article.published_data}</p>
         </div>
         <div>
-          <p>url</p>
-          <p>abstract</p>
+          <p>{article.abstract}</p>
         </div>
-        <p></p>
+        <Link href={`http://${article.url}`}><button>Read the Full Article</button></Link>
       </div>
     </div>
   )
