@@ -66,7 +66,7 @@ const determineCards = () => {
       <main className={globals.main}>
         <div>
           <h2>Top News Stories from the World Today</h2>
-          <Filter handleFilter={handleFilter} />
+          <Filter handleFilter={handleFilter} type='world' />
         </div>
         <section className={styles.articleSection}>
           {determineCards()}
