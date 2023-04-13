@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { Noticia_Text } from 'next/font/google'
+// import { Noticia_Text } from 'next/font/google'
 import styles from './page.module.css'
 import globals from 'src/app/globals.css'
 import { useEffect, useState } from 'react'
@@ -10,11 +10,11 @@ import Article from './Components/Article'
 import Filter from './Components/Filter'
 import Modal from './Components/Modal'
 
-const noticia = Noticia_Text({ 
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'] 
-})
+// const noticia = Noticia_Text({ 
+//   weight: ['400', '700'],
+//   style: ['normal', 'italic'],
+//   subsets: ['latin'] 
+// })
 
 export default function popular() {
 
@@ -26,7 +26,7 @@ const [modal, setModal] = useState({})
 useEffect(() => {
   if(!articles.length){
     (async () => {
-      const data = await getArticles()
+      const data = await getArticles('popular')
       data.results ?
         setArticles(data.results) :
         setError(error)
