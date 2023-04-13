@@ -21,14 +21,13 @@ useEffect(() => {
     (async () => {
       const data = await getArticles('science')
       data.results ?
-        setArticles(data.results) :
+        setArticles(data.results.filter(article => article.section !== 'admin')) :
         setError(error)
     })()
   }
 }, [])
 
 const handleFilter = (selection) => {
-  console.log('filter for ', selection)
   selection === 'science' ?
     setFiltered([]) :
     setFiltered(articles.filter(article => article.subsection === selection || article.section === selection))
@@ -39,13 +38,11 @@ const displayArticle = (article) => {
 }
 
 const xArticle = () => {
-  console.log('modal off')
   setModal({})
 }
 
 const determineCards = () => {
   if(filtered.length) {
-    console.log('filtered cards rendering')
     return filtered.map(article => <Article key={article.url} displayArticle={displayArticle} article={article} />)
   } else if(articles.length) {
     return articles.map(article => <Article key={article.url} displayArticle={displayArticle} article={article} />)

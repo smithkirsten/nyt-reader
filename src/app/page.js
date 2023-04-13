@@ -27,7 +27,7 @@ useEffect(() => {
     (async () => {
       const data = await getArticles('world')
       data.results ?
-        setArticles(data.results) :
+        setArticles(data.results.filter(article => article.section !== 'admin')) :
         setError(error)
     })()
   }
