@@ -35,6 +35,19 @@ export default function Filter({ handleFilter, type }) {
           </select>
         </div>
       }
+      {type === 'arts' &&       
+        <div>
+          <select value={selection} onChange={(e) => {handleChange(e.target.value)}}>
+            <option value={'arts'}>All Art</option>
+            <option value={'dance'}>Dance</option>
+            <option value={'design'}>Design</option>
+            <option value={'movies'}>Movies</option>
+            <option value={'music'}>Music</option>
+            <option value={'television'}>Television</option>
+            <option value={'theater'}>Theater</option>
+          </select>
+        </div>
+      }
     </form>
   )
 }

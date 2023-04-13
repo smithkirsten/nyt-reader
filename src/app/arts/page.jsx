@@ -1,21 +1,15 @@
 'use client'
+
 import Image from 'next/image'
-import { Noticia_Text } from 'next/font/google'
-import styles from './page.module.css'
+import styles from '../page.module.css'
 import globals from 'src/app/globals.css'
 import { useEffect, useState } from 'react'
-import { getArticles } from '../util'
-import Article from './Components/Article'
-import Filter from './Components/Filter'
-import Modal from './Components/Modal'
+import { getArticles } from '../../util'
+import Article from '../Components/Article'
+import Filter from '../Components/Filter'
+import Modal from '../Components/Modal'
 
-const noticia = Noticia_Text({ 
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'] 
-})
-
-export default function Home() {
+export default function Arts() {
 
 const [articles, setArticles] = useState([])
 const [filtered, setFiltered] = useState([])
@@ -23,9 +17,9 @@ const [error, setError] = useState({})
 const [modal, setModal] = useState({})
 
 useEffect(() => {
-  if(!articles?.length){
+  if(!articles.length){
     (async () => {
-      const data = await getArticles('world')
+      const data = await getArticles('arts')
       data.results ?
         setArticles(data.results.filter(article => article.section !== 'admin')) :
         setError(error)
@@ -34,14 +28,12 @@ useEffect(() => {
 }, [])
 
 const handleFilter = (selection) => {
-  console.log('filter for ', selection)
-  selection === 'world' ?
+  selection === 'arts' ?
     setFiltered([]) :
-    setFiltered(articles.filter(article => article.subsection === selection))
+    setFiltered(articles.filter(article => article.subsection === selection || article.section === selection))
 }
 
 const displayArticle = (article) => {
-  console.log('modal on!')
   setModal(article)
 }
 
@@ -58,15 +50,15 @@ const determineCards = () => {
     return <p>whoops, dog got the paper</p>
   }
 }
-  console.log(modal)
+
   return (
     <>
     { modal.title ? 
       <Modal article={modal} xArticle={xArticle}/> :
       <main className={globals.main}>
         <div>
-          <h2>Top News Stories from the World Today</h2>
-          <Filter handleFilter={handleFilter} type='world' />
+          <h2>Top News Stories from the Arts Today</h2>
+          <Filter handleFilter={handleFilter} type='arts'/>
         </div>
         <section className={styles.articleSection}>
           {determineCards()}
