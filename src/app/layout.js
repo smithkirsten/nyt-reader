@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         <nav>
           <Link href='/'><button>World</button></Link>
+          <Link href='/arts'><button>Arts</button></Link>
           <Link href='/science'><button>Science</button></Link>
         </nav>
         <header>

@@ -23,7 +23,7 @@ const [error, setError] = useState({})
 const [modal, setModal] = useState({})
 
 useEffect(() => {
-  if(!articles.length){
+  if(!articles?.length){
     (async () => {
       const data = await getArticles('world')
       data.results ?

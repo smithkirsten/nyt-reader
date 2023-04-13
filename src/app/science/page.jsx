@@ -9,7 +9,7 @@ import Article from '../Components/Article'
 import Filter from '../Components/Filter'
 import Modal from '../Components/Modal'
 
-export default function science() {
+export default function Science() {
 
 const [articles, setArticles] = useState([])
 const [filtered, setFiltered] = useState([])
