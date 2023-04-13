@@ -16,7 +16,7 @@ import Modal from '../Components/Modal'
 //   subsets: ['latin'] 
 // })
 
-export default function popular() {
+export default function science() {
 
 const [articles, setArticles] = useState([])
 const [filtered, setFiltered] = useState([])
@@ -26,7 +26,7 @@ const [modal, setModal] = useState({})
 useEffect(() => {
   if(!articles.length){
     (async () => {
-      const data = await getArticles('popular')
+      const data = await getArticles('science')
       data.results ?
         setArticles(data.results) :
         setError(error)

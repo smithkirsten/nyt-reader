@@ -11,8 +11,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <nav>
-          <Link href='/'><button>Top Stories</button></Link>
-          <Link href='/popular'><button>Most Popular Stories</button></Link>
+          <Link href='/'><button>World</button></Link>
+          <Link href='/science'><button>Science</button></Link>
         </nav>
         <header>
           <h1>Top of the Morning from the NYT</h1>

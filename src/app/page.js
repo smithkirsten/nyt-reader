@@ -25,13 +25,11 @@ const [modal, setModal] = useState({})
 useEffect(() => {
   if(!articles.length){
     (async () => {
-      const data = await getArticles()
+      const data = await getArticles('world')
       data.results ?
         setArticles(data.results) :
         setError(error)
     })()
-    // console.log(mockData)
-    // setArticles(mockData.results)
   }
 }, [])
 
@@ -48,13 +46,11 @@ const displayArticle = (article) => {
 }
 
 const xArticle = () => {
-  console.log('modal off')
   setModal({})
 }
 
 const determineCards = () => {
   if(filtered.length) {
-    console.log('filtered cards rendering')
     return filtered.map(article => <Article key={article.url} displayArticle={displayArticle} article={article} />)
   } else if(articles.length) {
     return articles.map(article => <Article key={article.url} displayArticle={displayArticle} article={article} />)
