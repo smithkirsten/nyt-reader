@@ -44,10 +44,12 @@ const handleFilter = (selection) => {
 }
 
 const displayArticle = (article) => {
+  console.log('modal on!')
   setModal(article)
 }
 
 const xArticle = () => {
+  console.log('modal off')
   setModal({})
 }
 
@@ -64,14 +66,18 @@ const determineCards = () => {
 
   return (
     <main className={globals.main}>
-      <div>
-        <h2>Top News Stories from the World Today</h2>
-        <Filter handleFilter={handleFilter} />
-      </div>
-      <section className={styles.articleSection}>
-        {determineCards()}
-      </section>
-      { modal.title && <Modal article={modal} xArticle={xArticle}/>}
+    { modal.title ? 
+      <Modal article={modal} xArticle={xArticle}/> :
+      <>
+        <div>
+          <h2>Top News Stories from the World Today</h2>
+          <Filter handleFilter={handleFilter} />
+        </div>
+        <section className={styles.articleSection}>
+          {determineCards()}
+        </section>
+      </>
+    }
     </main>
   )
 }

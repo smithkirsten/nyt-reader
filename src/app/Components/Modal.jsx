@@ -4,7 +4,9 @@ export default function Modal({ article, xArticle }) {
   return (
     <div className={globals.modalBackground}>
       <div className={styles.modalContainer}>
-        <button onClick={() => xArticle()}> X </button>
+        <div>
+          <button onClick={() => xArticle()}> X </button>
+        </div>
         <p>image</p>
         <div>
           <h1>title</h1>
