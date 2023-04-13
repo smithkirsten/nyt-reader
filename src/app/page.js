@@ -63,12 +63,12 @@ const determineCards = () => {
     return <p>whoops, dog got the paper</p>
   }
 }
-
+  console.log(modal)
   return (
-    <main className={globals.main}>
+    <>
     { modal.title ? 
       <Modal article={modal} xArticle={xArticle}/> :
-      <>
+      <main className={globals.main}>
         <div>
           <h2>Top News Stories from the World Today</h2>
           <Filter handleFilter={handleFilter} />
@@ -76,8 +76,8 @@ const determineCards = () => {
         <section className={styles.articleSection}>
           {determineCards()}
         </section>
-      </>
+      </main>
     }
-    </main>
+    </>
   )
 }
