@@ -36,9 +36,9 @@ useEffect(() => {
 
 const handleFilter = (selection) => {
   console.log('filter for ', selection)
-  selection === 'world' ?
+  selection === 'science' ?
     setFiltered([]) :
-    setFiltered(articles.filter(article => article.subsection === selection))
+    setFiltered(articles.filter(article => article.subsection === selection || article.section === selection))
 }
 
 const displayArticle = (article) => {
