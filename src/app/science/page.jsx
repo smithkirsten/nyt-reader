@@ -57,7 +57,7 @@ const determineCards = () => {
       <Modal article={modal} xArticle={xArticle}/> :
       <main className={globals.main}>
         <div>
-          <h2>Top News Stories from the World Today</h2>
+          <h2>Top News Stories from Science Today</h2>
           <Filter handleFilter={handleFilter} type='science'/>
         </div>
         <section className={styles.articleSection}>
