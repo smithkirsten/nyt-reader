@@ -79,8 +79,8 @@ Want one extra step between you and the top news of today? Top of The Morning is
 
 ## Preview of App:
 
-!(preview of app)[public/preview.gif]
-
+![preview of app](public/preview.gif)
+![app gets 100% on lighthouse](public/accessibility.png)
 
   
 
